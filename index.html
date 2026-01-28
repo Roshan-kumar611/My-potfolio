@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan kumar - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Roshan kumar</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Roshan kumar</h1>
+                <h2 class="hero-subtitle">Hello, Roshan Software Developer</h2>
+                <p class="hero-description">I'm a passionate software developer with expertise in creating innovative digital solutions. I love turning ideas into reality through code.</p>
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+            <div class="hero-image">
+                <div class="circular-bg">
+                    <img src="profile.png" alt="Jensen Omega" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>I'm a motivated Data Analyst and Frontend Developer with a strong interest in transforming data into meaningful insights and building user-friendly web interfaces. I enjoy solving real-world problems using both analytical and creative approaches.</p>
+                <p>My skills include data visualization with Power BI and Excel, along with frontend technologies like HTML, CSS, JavaScript, and basic Java. I have worked on projects such as a Skill Gap Analyzer, Smart Fleet Management System, and several small web and data-based applications.</p>
+                <p>I'm constantly learning new tools and technologies to improve my technical abilities and deliver better solutions. When I'm not working on projects, I enjoy exploring data trends and enhancing my web development skills.</p>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-box">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-title">Projects Completed</div>
+                </div>
+                <!-- <div class="stat-box">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-title">Client Satisfaction</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-title">Years Experience</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-title">Happy Clients</div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skills-categories">
+                <button class="category-btn active" data-category="all">All Skills</button>
+                <button class="category-btn" data-category="frontend">Frontend</button>
+                <!-- <button class="category-btn" data-category="backend">Backend</button> -->
+                <button class="category-btn" data-category="tools">Tools</button>
+            </div>
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Frontend Skills -->
+                <div class="skill-item" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="95"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="88"></div>
+                    </div>
+                </div>
+
+                <!-- <div class="skill-item" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="85"></div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="skill-item" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-vuejs"></i>
+                            </div>
+                            <span class="skill-name">Vue.js</span>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="80"></div>
+                    </div>
+                </div> -->
+
+                <!-- Backend Skills -->
+                <!-- <div class="skill-item" data-category="backend">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <span class="skill-percentage">87%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="87"></div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="skill-item" data-category="backend">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="82"></div>
+                    </div>
+                </div> -->
+
+                <div class="skill-item" data-category="backend">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="78"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item" data-category="backend">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="75"></div>
+                    </div>
+                </div>
+
+                <!-- <div class="skill-item" data-category="backend">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <span class="skill-name">PHP</span>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="70"></div>
+                    </div>
+                </div> -->
+
+                <!-- Tools Skills -->
+                <div class="skill-item" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="92"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-category="tools">
+                     <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fas fa-file-excel"></i>
+                            </div>
+                            <span class="skill-name">Excel</span>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="90"></div>
+                </div>
+            </div>
+                      
+            <div class="skill-item" data-category="tools">
+                <div class="skill-header">
+                     <div class="skill-info">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                            <span class="skill-name">Power BI</span>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="88"></div>
+                </div>
+            </div>
+                        
+
+<!-- 
+                <div class="skill-item" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <span class="skill-percentage">76%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="76"></div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="skill-item" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <span class="skill-name">AWS</span>
+                        </div>
+                        <span class="skill-percentage">72%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="72"></div>
+                    </div>
+                </div> -->
+<!-- 
+                <div class="skill-item" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <span class="skill-name">Figma</span>
+                        </div>
+                        <span class="skill-percentage">68%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="68"></div>
+                    </div>
+                </div> -->
+<!-- 
+                <div class="skill-item" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">
+                                <i class="fab fa-sass"></i>
+                            </div>
+                            <span class="skill-name">Sass</span>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="85"></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="Screenshot 2026-01-28 102012.png" alt="Project 1" class="project-img">
+                <div class="project-info">
+                    <h3 class="project-title">BlinkIt Sales Dashboard</h3>
+                    <p class="project-description">An interactive Blinkit sales dashboard to track sales performance, key metrics, and trends.</p>
+                    <div class="project-tags">
+                        <span class="tag">Excel</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Dashboard</span>
+                    </div>
+                    <a href="https://github.com/Roshan-kumar611/Blinkit-Analysis-Dashboard" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Screenshot 2026-01-28 115059.png" alt="Project 2" class="project-img">
+                <div class="project-info">
+                    <h3 class="project-title">My potfolio</h3>
+                    <p class="project-description">A responsive personal portfolio website built to showcase my projects, skills, and experience in data analysis and frontend development.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">Css</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Fleet.png" alt="Project 3" class="project-img">
+                <div class="project-info">
+                    <h3 class="project-title">Smart Fleet Management System</h3>
+                    <p class="project-description">A Smart Fleet Management System designed to manage vehicles, track real-time data, and optimize fleet operations..</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">API Integration</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <a href="https://github.com/Roshan-kumar611/miniProject" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Roshan kumar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+   emailjs.init("OWfE2VKoFeSRqw0ET");
+})();
+</script>
+
+</body>
+</html>
