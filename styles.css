@@ -1167,3 +1167,10 @@ footer::before {
   }
 }
 
+/* Resume added: */
+.resume-small{
+    padding:6px 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px;
+}
